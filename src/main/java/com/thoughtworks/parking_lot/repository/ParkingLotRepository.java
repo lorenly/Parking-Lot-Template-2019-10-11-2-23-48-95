@@ -1,4 +1,11 @@
 package com.thoughtworks.parking_lot.repository;
 
-public class ParkingLotRepository {
+import com.thoughtworks.parking_lot.model.ParkingLot;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ParkingLotRepository extends JpaRepository<ParkingLot, Long> {
+
+    ParkingLot findByNameContaining(String name);
 }
