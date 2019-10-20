@@ -7,14 +7,20 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ParkingLotService {
 
     @Autowired
     ParkingLotRepository parkingLotRepository;
+
     public Iterable<ParkingLot> findAll(Integer page, Integer pageSize) {
         return parkingLotRepository.findAll(PageRequest.of(page, pageSize, Sort.by("name").ascending()));
     }
 
 
+    public ParkingLot save(ParkingLot parkingLot) {
+        return parkingLotRepository.save(parkingLot);
+    }
 }

@@ -5,6 +5,14 @@ public class ParkingLot {
     private int capacity;
     private String location;
 
+    public ParkingLot(){
+
+    }
+
+    public ParkingLot(String name){
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
