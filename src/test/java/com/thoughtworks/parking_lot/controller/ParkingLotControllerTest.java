@@ -136,6 +136,18 @@ public class ParkingLotControllerTest {
                 .andExpect(jsonPath("$.capacity", is(100)));
     }
 
+    @Test
+    public void should_return_400_when_updating_parking_lot_not_exist() throws Exception {
+        ParkingLot parkingLot = new ParkingLot();
+        when(parkingLotService.updateParkingLot(eq("NotExistParkingLot"), any())).thenReturn(parkingLot);
+
+        ResultActions resultActions = mvc.perform(patch("/parking_lot/{name}", "NotExistParkingLot")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(null)));
+
+        resultActions.andExpect(status().isBadRequest());
+    }
+
 
     private ParkingLot myParkingLot(){
         ParkingLot parkingLot = new ParkingLot();
