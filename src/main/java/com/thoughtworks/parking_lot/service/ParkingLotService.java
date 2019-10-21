@@ -55,4 +55,14 @@ public class ParkingLotService {
         throw new NotFoundException(NOT_FOUND);
 
     }
+
+    public ParkingLot updateParkingLot(String name, ParkingLot parkingLot) throws BadRequestException {
+        Optional<ParkingLot> updateCapacity = Optional.ofNullable((parkingLotRepository.findByNameContaining(name)));
+        if(updateCapacity.isPresent()){
+            updateCapacity.get().setCapacity(parkingLot.getCapacity());
+            parkingLotRepository.save(updateCapacity.get());
+            return updateCapacity.get();
+        }
+        throw new BadRequestException(BAD_REQUEST);
+    }
 }

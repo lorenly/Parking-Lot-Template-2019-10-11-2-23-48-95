@@ -22,8 +22,7 @@ import java.util.Collections;
 
 import static org.hamcrest.Matchers.hasValue;
 import static org.hamcrest.Matchers.is;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.startsWith;
+import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -120,6 +119,22 @@ public class ParkingLotControllerTest {
         resultActions.andExpect(status().isNotFound());
     }
 
+    @Test
+    public void should_update_parking_lot_capacity() throws Exception {
+        ParkingLot parkingLot = myParkingLot();
+        parkingLot.setCapacity(100);
+        when(parkingLotService.updateParkingLot(eq("MyParkingLot"), any())).thenReturn(parkingLot);
+
+        ResultActions resultActions = mvc.perform(patch("/parking_lot/{name}", "MyParkingLot")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(parkingLot)));
+
+        resultActions.andExpect(status().isOk())
+                .andDo(print())
+                .andExpect(jsonPath("$.name",is("MyParkingLot")))
+                .andExpect(jsonPath("$.location", is("MyLocation")))
+                .andExpect(jsonPath("$.capacity", is(100)));
+    }
 
 
     private ParkingLot myParkingLot(){

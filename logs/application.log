@@ -1,0 +1,850 @@
+2019-10-21 18:26:04.786  INFO 121552 --- [main] c.t.parking_lot.ParkingLotApplication    : Starting ParkingLotApplication on ITAMNL17-W10 with PID 121552 (D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95\build\classes\java\main started by Lorenly in D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 18:26:04.788  INFO 121552 --- [main] c.t.parking_lot.ParkingLotApplication    : No active profile set, falling back to default profiles: default
+2019-10-21 18:26:05.455  INFO 121552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 18:26:05.508  INFO 121552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 1 repository interfaces.
+2019-10-21 18:26:05.825  INFO 121552 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$89bff27] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 18:26:06.146  INFO 121552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2019-10-21 18:26:06.198  INFO 121552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 18:26:06.198  INFO 121552 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 18:26:06.314  INFO 121552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 18:26:06.315 DEBUG 121552 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-10-21 18:26:06.315  INFO 121552 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1492 ms
+2019-10-21 18:26:06.675  INFO 121552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-21 18:26:06.790  INFO 121552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-21 18:26:06.832 DEBUG 121552 --- [main] o.hibernate.jpa.internal.util.LogHelper  : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: sun.misc.Launcher$AppClassLoader@18b4aac2
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (HikariPool-1)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/D:/git/Parking-Lot-Template-2019-10-11-2-23-48-95/build/classes/java/main/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.thoughtworks.parking_lot.model.ParkingLot]
+	Mapping files names []
+	Properties []
+2019-10-21 18:26:06.843 DEBUG 121552 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2019-10-21 18:26:06.845 DEBUG 121552 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2019-10-21 18:26:06.846 DEBUG 121552 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2019-10-21 18:26:06.883  INFO 121552 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-21 18:26:06.885  INFO 121552 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-21 18:26:06.984 DEBUG 121552 --- [main] o.hibernate.service.spi.ServiceBinding   : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2019-10-21 18:26:07.001 DEBUG 121552 --- [main] o.h.c.internal.RegionFactoryInitiator    : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2019-10-21 18:26:07.002 DEBUG 121552 --- [main] o.h.c.internal.RegionFactoryInitiator    : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2019-10-21 18:26:07.012  INFO 121552 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-21 18:26:07.028 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@60df7989
+2019-10-21 18:26:07.028 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@60df7989
+2019-10-21 18:26:07.028 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@60df7989
+2019-10-21 18:26:07.028 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@5cf8676a
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@388d14e
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@68b366e2
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@2dbc408c
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@2dbc408c
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@2dbc408c
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@dd4aec3
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@dd4aec3
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@dd4aec3
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@3b332962
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@3b332962
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3b332962
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@342e690b
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@342e690b
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@342e690b
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@781711b7
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@781711b7
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@781711b7
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@5d3b58ca
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@5d3b58ca
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@5d3b58ca
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@4337afd
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@4337afd
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@4337afd
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@5ad1904f
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@5ad1904f
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@3135bf25
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@3135bf25
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@f2a1813
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@f2a1813
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@67b355c8
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@46e3559f
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@3cd26422
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@3cd26422
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@1b01a0d
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@1b01a0d
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@72a2312e
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@72a2312e
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@57e388c3
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@57e388c3
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@2b916808
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@2b916808
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@1290ed28
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@1290ed28
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@29050de5
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@29050de5
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@71a3e05c
+2019-10-21 18:26:07.044 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@71a3e05c
+2019-10-21 18:26:07.060 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4087c7fc
+2019-10-21 18:26:07.060 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4087c7fc
+2019-10-21 18:26:07.061 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@516592b1
+2019-10-21 18:26:07.061 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@516592b1
+2019-10-21 18:26:07.062 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@76bf1bb8
+2019-10-21 18:26:07.062 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@76bf1bb8
+2019-10-21 18:26:07.062 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@6f3f0ae
+2019-10-21 18:26:07.062 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@6f3f0ae
+2019-10-21 18:26:07.062 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@6f3f0ae
+2019-10-21 18:26:07.063 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@5b5b59
+2019-10-21 18:26:07.064 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@f1266c6
+2019-10-21 18:26:07.064 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@f1266c6
+2019-10-21 18:26:07.064 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@f1266c6
+2019-10-21 18:26:07.065 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@3b353651
+2019-10-21 18:26:07.065 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@1e84f3c8
+2019-10-21 18:26:07.065 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@1e84f3c8
+2019-10-21 18:26:07.066 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@4dc7cd1c
+2019-10-21 18:26:07.066 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4dc7cd1c
+2019-10-21 18:26:07.066 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@d499c13
+2019-10-21 18:26:07.066 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@d499c13
+2019-10-21 18:26:07.067 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@33188612
+2019-10-21 18:26:07.067 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@33188612
+2019-10-21 18:26:07.068 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@6c8f60f3
+2019-10-21 18:26:07.068 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@6c8f60f3
+2019-10-21 18:26:07.068 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@58aa10f4
+2019-10-21 18:26:07.069 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@733ec58b
+2019-10-21 18:26:07.069 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@733ec58b
+2019-10-21 18:26:07.069 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@733ec58b
+2019-10-21 18:26:07.070 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@626c19cf
+2019-10-21 18:26:07.070 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@626c19cf
+2019-10-21 18:26:07.070 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@626c19cf
+2019-10-21 18:26:07.071 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@2da99821
+2019-10-21 18:26:07.071 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@661fe025
+2019-10-21 18:26:07.072 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@4c1d59cd
+2019-10-21 18:26:07.072 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@4c1d59cd
+2019-10-21 18:26:07.072 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@4c1d59cd
+2019-10-21 18:26:07.073 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@66223d94
+2019-10-21 18:26:07.073 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@66223d94
+2019-10-21 18:26:07.073 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@66223d94
+2019-10-21 18:26:07.073 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@220c9a63
+2019-10-21 18:26:07.073 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@51a651c1
+2019-10-21 18:26:07.074 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@daf22f0
+2019-10-21 18:26:07.075 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@daf22f0
+2019-10-21 18:26:07.075 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@20ead579
+2019-10-21 18:26:07.076 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@16da1abc
+2019-10-21 18:26:07.076 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@16da1abc
+2019-10-21 18:26:07.077 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@61ae0d43
+2019-10-21 18:26:07.077 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@61ae0d43
+2019-10-21 18:26:07.077 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2e1b374c
+2019-10-21 18:26:07.077 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@760487aa
+2019-10-21 18:26:07.078 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@4faf104
+2019-10-21 18:26:07.080 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@4346808
+2019-10-21 18:26:07.080 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4346808
+2019-10-21 18:26:07.081 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@86d6bf7
+2019-10-21 18:26:07.081 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@2fbe26da
+2019-10-21 18:26:07.081 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@4ed15347
+2019-10-21 18:26:07.081 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@6963b88c
+2019-10-21 18:26:07.081 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@ab24484
+2019-10-21 18:26:07.081 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@54e43bfe
+2019-10-21 18:26:07.081 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@106b014e
+2019-10-21 18:26:07.081 DEBUG 121552 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@64387c17
+2019-10-21 18:26:07.088 DEBUG 121552 --- [main] o.h.boot.internal.BootstrapContextImpl   : Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@79d3473e] into BootstrapContext; was [null]
+2019-10-21 18:26:07.089 DEBUG 121552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@79d3473e) [was null]
+2019-10-21 18:26:07.089 DEBUG 121552 --- [main] o.h.boot.internal.BootstrapContextImpl   : Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@164642a4] into BootstrapContext; was [null]
+2019-10-21 18:26:07.089 DEBUG 121552 --- [main] o.h.boot.internal.BootstrapContextImpl   : Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@75cf0de5] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@50b0afd7]
+2019-10-21 18:26:07.122 DEBUG 121552 --- [main] o.h.boot.internal.BootstrapContextImpl   : Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@79d3473e]
+2019-10-21 18:26:07.122 DEBUG 121552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@79d3473e]
+2019-10-21 18:26:07.130 DEBUG 121552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2019-10-21 18:26:07.130 DEBUG 121552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2019-10-21 18:26:07.130 DEBUG 121552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2019-10-21 18:26:07.130 DEBUG 121552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2019-10-21 18:26:07.131 DEBUG 121552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2019-10-21 18:26:07.131 DEBUG 121552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2019-10-21 18:26:07.132 DEBUG 121552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2019-10-21 18:26:07.132 DEBUG 121552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-10-21 18:26:07.133 DEBUG 121552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2019-10-21 18:26:07.133 DEBUG 121552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2019-10-21 18:26:07.134 DEBUG 121552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2019-10-21 18:26:07.134 DEBUG 121552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2019-10-21 18:26:07.134 DEBUG 121552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-10-21 18:26:07.135 DEBUG 121552 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2019-10-21 18:26:07.139 DEBUG 121552 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Database ->
+       name : H2
+    version : 1.4.199 (2019-03-13)
+      major : 1
+      minor : 4
+2019-10-21 18:26:07.139 DEBUG 121552 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Driver ->
+       name : H2 JDBC Driver
+    version : 1.4.199 (2019-03-13)
+      major : 1
+      minor : 4
+2019-10-21 18:26:07.139 DEBUG 121552 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : JDBC version : 4.1
+2019-10-21 18:26:07.147  INFO 121552 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-21 18:26:07.182 DEBUG 121552 --- [main] o.h.e.j.env.spi.IdentifierHelperBuilder  : JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2019-10-21 18:26:07.185 DEBUG 121552 --- [main] o.h.boot.model.relational.Namespace      : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2019-10-21 18:26:07.185 DEBUG 121552 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1c61eda5] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@1859ffda]
+2019-10-21 18:26:07.216 DEBUG 121552 --- [main] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: com.thoughtworks.parking_lot.model.ParkingLot
+2019-10-21 18:26:07.231 DEBUG 121552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2019-10-21 18:26:07.231 DEBUG 121552 --- [main] o.h.cfg.annotations.EntityBinder         : Import with entity name ParkingLot
+2019-10-21 18:26:07.231 DEBUG 121552 --- [main] o.h.cfg.annotations.EntityBinder         : Bind entity com.thoughtworks.parking_lot.model.ParkingLot on table parking_lot
+2019-10-21 18:26:07.247 DEBUG 121552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parking_lot), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2019-10-21 18:26:07.247 DEBUG 121552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.thoughtworks.parking_lot.model.ParkingLot:id]
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property id
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] org.hibernate.cfg.BinderHelper           : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parking_lot), mappingColumn=capacity, insertable=true, updatable=true, unique=false}
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property capacity with lazy=false
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.thoughtworks.parking_lot.model.ParkingLot:capacity]
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for capacity
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property capacity
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parking_lot), mappingColumn=location, insertable=true, updatable=true, unique=false}
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property location with lazy=false
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.thoughtworks.parking_lot.model.ParkingLot:location]
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for location
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property location
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(parking_lot), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property name with lazy=false
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.thoughtworks.parking_lot.model.ParkingLot:name]
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for name
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property name
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for capacity
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for location
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for name
+2019-10-21 18:26:07.263 DEBUG 121552 --- [main] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [parking_lot]
+2019-10-21 18:26:07.296 DEBUG 121552 --- [main] o.hibernate.internal.SessionFactoryImpl  : Building session factory
+2019-10-21 18:26:07.296 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : SessionFactory name : null
+2019-10-21 18:26:07.296 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Automatic flush during beforeCompletion(): enabled
+2019-10-21 18:26:07.296 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Automatic session close at end of transaction: disabled
+2019-10-21 18:26:07.296 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Statistics: disabled
+2019-10-21 18:26:07.296 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Deleted entity synthetic identifier rollback: disabled
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Default entity-mode: pojo
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Allow initialization of lazy state outside session : disabled
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Using BatchFetchStyle : LEGACY
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Default batch fetch size: -1
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Maximum outer join fetch depth: null
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Default null ordering: NONE
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Order SQL updates by primary key: disabled
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Order SQL inserts for batching: disabled
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : multi-tenancy strategy : NONE
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : JTA Track by Thread: enabled
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Query language substitutions: {}
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Named query checking : enabled
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Second-level cache: disabled
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Second-level query cache: disabled
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Second-level query cache factory: null
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Second-level cache region prefix: null
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Optimize second-level cache for minimal puts: disabled
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Structured second-level cache entries: disabled
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Second-level cache direct-reference entries: disabled
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Automatic eviction of collection cache: disabled
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : JDBC batch size: 15
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : JDBC batch updates for versioned data: enabled
+2019-10-21 18:26:07.297 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Scrollable result sets: enabled
+2019-10-21 18:26:07.298 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Wrap result sets: disabled
+2019-10-21 18:26:07.298 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : JDBC3 getGeneratedKeys(): enabled
+2019-10-21 18:26:07.298 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : JDBC result set fetch size: null
+2019-10-21 18:26:07.298 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Connection release mode: ON_CLOSE
+2019-10-21 18:26:07.298 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : Generate SQL with comments: disabled
+2019-10-21 18:26:07.298 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : JPA compliance - query : 
+2019-10-21 18:26:07.298 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : JPA compliance - closed-handling : 
+2019-10-21 18:26:07.298 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : JPA compliance - lists : 
+2019-10-21 18:26:07.298 DEBUG 121552 --- [main] org.hibernate.cfg.Settings               : JPA compliance - transactions : 
+2019-10-21 18:26:07.337 DEBUG 121552 --- [main] o.hibernate.internal.SessionFactoryImpl  : Session factory constructed with filter configurations : {}
+2019-10-21 18:26:07.337 DEBUG 121552 --- [main] o.hibernate.internal.SessionFactoryImpl  : Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, hibernate.id.new_generator_mappings=true, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=amd64, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@3520958b, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.H2Dialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=C:\Program Files\Java\jdk1.8.0_221\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\rt.jar;D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95\build\classes\java\main;D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95\out\production\resources;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-actuator\2.1.9.RELEASE\ac351fba2b575026aecef167facd7b51c3e61a2b\spring-boot-starter-actuator-2.1.9.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-web\2.1.9.RELEASE\2063870234eebbda3c09dddf9853477fe9e4a719\spring-boot-starter-web-2.1.9.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-data-jpa\2.1.9.RELEASE\784d6d5c525c2dd9fac31031ee6ca2ec8b067af5\spring-boot-starter-data-jpa-2.1.9.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-core\5.3.12.Final\e1929362fe24a9f62142d18f1ac5b0d7f278ef22\hibernate-core-5.3.12.Final.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.1\dd6dda9da676a54c5b36ca2806ff95ee017d8738\jaxb-runtime-2.3.1.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\javax.xml.bind\jaxb-api\2.4.0-b180830.0359\b54184b7dcab2031add3f525550c7f1b7e12209d\jaxb-api-2.4.0-b180830.0359.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\com.h2database\h2\1.4.199\7bf08152984ed8859740ae3f97fae6c72771ae45\h2-1.4.199.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-json\2.1.9.RELEASE\53bdf52bc28b7e753874e0136fb33c9eab184276\spring-boot-starter-json-2.1.9.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-aop\2.1.9.RELEASE\74226b26cf15952f639deca38fe919701755c97b\spring-boot-starter-aop-2.1.9.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-jdbc\2.1.9.RELEASE\3f7d1d67669dfa0ea4ff9216afbeef5bc6a58ecb\spring-boot-starter-jdbc-2.1.9.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter\2.1.9.RELEASE\45d7afa2d9aab4b2984f2c330f507797fbcf501f\spring-boot-starter-2.1.9.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-actuator-autoconfigure\2.1.9.RELEASE\6b792c8880fafb5f97e0d993106f6818b03436e6\spring-boot-actuator-autoconfigure-2.1.9.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\io.micrometer\micrometer-core\1.1.7\d398512c25df2d631d2e6821cbed3efb9669eed6\micrometer-core-1.1.7.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-tomcat\2.1.9.RELEASE\99bef08a0b7fd10ff9827f0f8e6f49b97cbabf7f\spring-boot-starter-tomcat-2.1.9.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.hibernate.validator\hibernate-validator\6.0.17.Final\af73055fc4a103ab347c56e7da5a143d68a0170\hibernate-validator-6.0.17.Final.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework\spring-webmvc\5.1.10.RELEASE\67b6da7852e89bc0df6ce36a263ac4377fe48e27\spring-webmvc-5.1.10.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework\spring-web\5.1.10.RELEASE\f769e9287286f80f6b1d943cc27194ec33d2041c\spring-web-5.1.10.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\javax.transaction\javax.transaction-api\1.3\e006adf5cf3cca2181d16bd640ecb80148ec0fce\javax.transaction-api-1.3.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-jpa\2.1.11.RELEASE\b774364187f5e68379b8c3121232a04686a0325c\spring-data-jpa-2.1.11.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aspects\5.1.10.RELEASE\b0364caabcde96dc6385480d0f9270613ab04511\spring-aspects-5.1.10.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\javax.activation\javax.activation-api\1.2.0\85262acf3ca9816f9537ca47d5adeabaead7cb16\javax.activation-api-1.2.0.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-autoconfigure\2.1.9.RELEASE\aa6d5e0fef585bec64543b9b8f944a94060e710a\spring-boot-autoconfigure-2.1.9.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-actuator\2.1.9.RELEASE\2cf168b06d72f3218858c9fdcdef2ae01fa36cbf\spring-boot-actuator-2.1.9.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\2.1.9.RELEASE\b18e7287a82ee06c6bb4e79423c25c05b8303dc1\spring-boot-2.1.9.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-logging\2.1.9.RELEASE\802b562b0c602ae9242b659a28b9bf89ca689b2d\spring-boot-starter-logging-2.1.9.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.3.2\934c04d3cfef185a8008e7bf34331b79730a9d43\javax.annotation-api-1.3.2.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context\5.1.10.RELEASE\f81a8bb5edeee61484ad916d8bc1dac55e994f1c\spring-context-5.1.10.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aop\5.1.10.RELEASE\e602c71f7c6e4479fe94d12597563f00c1d94aed\spring-aop-5.1.10.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework\spring-orm\5.1.10.RELEASE\ce92238d65405408387b1ae7a5dd5a280f7ea29f\spring-orm-5.1.10.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework\spring-jdbc\5.1.10.RELEASE\48957bfad9656fdba9263539e2fa8f3034939ba8\spring-jdbc-5.1.10.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework.data\spring-data-commons\2.1.11.RELEASE\dace2a47d274ac5f0ac3ff2f47cb0b936bef5b46\spring-data-commons-2.1.11.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework\spring-tx\5.1.10.RELEASE\c32ebb7fb1be3b733304b7873c31817dd434479a\spring-tx-5.1.10.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework\spring-beans\5.1.10.RELEASE\6aa17eabf08008f22e7824285663662e7c27e3f4\spring-beans-5.1.10.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework\spring-expression\5.1.10.RELEASE\7dc657305af97015f96135bfbb5036caf8829070\spring-expression-5.1.10.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core\5.1.10.RELEASE\4349487d80cd1098de6266d1ae99f8d743342d85\spring-core-5.1.10.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.9.9\4b04126963103216c9c43b0f34bbc36315654204\jackson-datatype-jdk8-2.9.9.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.9.9\a33df137557793b0404a486888dbe049f7abeeeb\jackson-datatype-jsr310-2.9.9.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.module\jackson-module-parameter-names\2.9.9\a92facb55a2538e7b2fe14294570a18b823ad431\jackson-module-parameter-names-2.9.9.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.yaml\snakeyaml\1.23\ec62d74fe50689c28c0ff5b35d3aebcaa8b5be68\snakeyaml-1.23.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.9.9.3\68ddd453458765757fd3ffca9437f9a42d91003e\jackson-databind-2.9.9.3.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.hdrhistogram\HdrHistogram\2.1.9\e4631ce165eb400edecfa32e03d3f1be53dee754\HdrHistogram-2.1.9.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.latencyutils\LatencyUtils\2.0.3\769c0b82cb2421c8256300e907298a9410a2a3d3\LatencyUtils-2.0.3.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-websocket\9.0.26\8991b1bd82c5745e95a9161472a92dc1e5c7148e\tomcat-embed-websocket-9.0.26.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-core\9.0.26\6312ba542bc58fa9ee789a43516ce4d862548a6b\tomcat-embed-core-9.0.26.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.apache.tomcat.embed\tomcat-embed-el\9.0.26\a551f05d3ecf5434eaadd75e0b51519447df124\tomcat-embed-el-9.0.26.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\javax.validation\validation-api\2.0.1.Final\cb855558e6271b1b32e716d24cb85c7f583ce09e\validation-api-2.0.1.Final.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\5.0.4.Final\965a18fdf939ee75e41f7918532d37b3a8350535\hibernate-commons-annotations-5.0.4.Final.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.3.3.Final\d3cfa8d3075fd52884fc82ded5c52b1407f18e6e\jboss-logging-3.3.3.Final.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.4.0\291658ac2ce2476256c7115943652c0accb5c857\classmate-1.4.0.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.aspectj\aspectjweaver\1.9.4\9205229878f3d62fbd3a32a0fb6be2d6ad8589a9\aspectjweaver-1.9.4.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\com.zaxxer\HikariCP\3.2.0\6c66db1c636ee90beb4c65fe34abd8ba9396bca6\HikariCP-3.2.0.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\javax.persistence\javax.persistence-api\2.2\25665ac8c0b62f50e6488173233239120fc52c96\javax.persistence-api-2.2.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.javassist\javassist\3.23.2-GA\c5afe660a95e87ceb518e4f5cf02f5c56b547683\javassist-3.23.2-GA.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.9.16\e7d63009be7b87ff1f15b72e5b8c59c897a8d8bd\byte-buddy-1.9.16.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\antlr\antlr\2.7.7\83cd2cd674a217ade95a4bb83a8a14f351f48bd0\antlr-2.7.7.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.jboss\jandex\2.0.5.Final\7060f67764565b9ee9d467e3ed0cb8a9c601b23a\jandex-2.0.5.Final.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.dom4j\dom4j\2.1.1\3dce5dbb3571aa820c677fadd8349bfa8f00c199\dom4j-2.1.1.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.2.3\7c4f3c474fb2c041d8028740440937705ebb473a\logback-classic-1.2.3.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-to-slf4j\2.11.2\6d37bf7b046c0ce2669f26b99365a2cfa45c4c18\log4j-to-slf4j-2.11.2.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.slf4j\jul-to-slf4j\1.7.28\c6f06c420ad62d3824b38a06dfdce9fb55ba81ef\jul-to-slf4j-1.7.28.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.28\2cd9b264f76e3d087ee21bfc99305928e1bdb443\slf4j-api-1.7.28.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.springframework\spring-jcl\5.1.10.RELEASE\6a2739f86e70d9495314489a99bebff473959fe7\spring-jcl-5.1.10.RELEASE.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.9.0\7c10d545325e3a6e72e06381afe469fd40eb701\jackson-annotations-2.9.0.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.9.9\bfff5af9fb8347d26bbb7959cb9b4fe9a2b0ca5e\jackson-core-2.9.9.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\txw2\2.3.1\a09d2c48d3285f206fafbffe0e50619284e92126\txw2-2.3.1.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\com.sun.istack\istack-commons-runtime\3.0.7\c197c86ceec7318b1284bffb49b54226ca774003\istack-commons-runtime-3.0.7.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.jvnet.staxex\stax-ex\1.8\8cc35f73da321c29973191f2cf143d29d26a1df7\stax-ex-1.8.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\com.sun.xml.fastinfoset\FastInfoset\1.2.15\bb7b7ec0379982b97c62cd17465cb6d9155f68e8\FastInfoset-1.2.15.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.2.3\864344400c3d4d92dfeb0a305dc87d953677c03c\logback-core-1.2.3.jar;C:\Users\Lorenly\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.11.2\f5e9a2ffca496057d6891a3de65128efc636e26e\log4j-api-2.11.2.jar;D:\Softwares\IntelliJ IDEA Community Edition 2019.2.2\lib\idea_rt.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, catalina.useNaming=false, java.vendor.url=http://java.oracle.com/, user.timezone=Asia/Shanghai, os.name=Windows 10, java.vm.specification.version=1.8, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_221\jre\bin, sun.java.command=com.thoughtworks.parking_lot.ParkingLotApplication, hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@6cc64028, javax.persistence.sharedCache.mode=UNSPECIFIED, sun.cpu.endian=little, user.home=C:\Users\Lorenly, user.language=en, java.specification.vendor=Oracle Corporation, java.home=C:\Program Files\Java\jdk1.8.0_221\jre, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.awt.headless=true, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_221\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_221\jre\classes, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_221-b11, user.name=Lorenly, path.separator=;, os.version=10.0, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_221\jre\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.ejb.persistenceUnitName=default, file.encoding=UTF-8, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, LOG_FILE=logs/application.log, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\Lorenly\AppData\Local\Temp\, com.zaxxer.hikari.pool_number=1, catalina.home=C:\Users\Lorenly\AppData\Local\Temp\tomcat.9218955249768568741.9090, java.version=1.8.0_221, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95, os.arch=amd64, PID=121552, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, catalina.base=C:\Users\Lorenly\AppData\Local\Temp\tomcat.9218955249768568741.9090, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@291a4791, java.library.path=C:\Program Files\Java\jdk1.8.0_221\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Softwares\Tibco\tibrv\8.4\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Softwares\Git\cmd;D:\Softwares\Microsoft VS Code\bin;C:\Users\cruztr\AppData\Local\Temp\LRE1CCE.tmp\bin;D:\Softwares\maven\bin;D:\Softwares\gradle-5.6.2\bin;D:\Softwares\nodejs\;C:\Program Files\Java\jdk1.8.0_221\bin;D:\Softwares\maven\bin;C:\Program Files (x86)\GitExtensions\;C:\Users\Lorenly\AppData\Local\Microsoft\WindowsApps;;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.221-b11, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.datasource=HikariDataSource (HikariPool-1), sun.io.unicode.encoding=UnicodeLittle, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, java.class.version=52.0}
+2019-10-21 18:26:07.341 DEBUG 121552 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 18:26:07.341 DEBUG 121552 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 18:26:07.341 DEBUG 121552 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 18:26:07.341 DEBUG 121552 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 18:26:07.341 DEBUG 121552 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 18:26:07.341 DEBUG 121552 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 18:26:07.341 DEBUG 121552 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 18:26:07.341 DEBUG 121552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 18:26:07.341 DEBUG 121552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 18:26:07.341 DEBUG 121552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 18:26:07.341 DEBUG 121552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 18:26:07.341 DEBUG 121552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 18:26:07.341 DEBUG 121552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.thoughtworks.parking_lot.model.ParkingLot] is safe
+2019-10-21 18:26:07.341 DEBUG 121552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.thoughtworks.parking_lot.model.ParkingLot
+2019-10-21 18:26:07.357 DEBUG 121552 --- [main] org.hibernate.secure.spi.JaccIntegrator  : Skipping JACC integration as it was not enabled
+2019-10-21 18:26:07.357 DEBUG 121552 --- [main] o.hibernate.internal.SessionFactoryImpl  : Instantiated session factory
+2019-10-21 18:26:07.357 DEBUG 121552 --- [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1c61eda5] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@6544899b]
+2019-10-21 18:26:07.386 DEBUG 121552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.thoughtworks.parking_lot.model.ParkingLot] is safe
+2019-10-21 18:26:07.386 DEBUG 121552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.thoughtworks.parking_lot.model.ParkingLot
+2019-10-21 18:26:07.401 DEBUG 121552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.thoughtworks.parking_lot.model.ParkingLot] is safe
+2019-10-21 18:26:07.401 DEBUG 121552 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.thoughtworks.parking_lot.model.ParkingLot
+2019-10-21 18:26:07.529 DEBUG 121552 --- [main] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: com.thoughtworks.parking_lot.model.ParkingLot
+2019-10-21 18:26:07.529 DEBUG 121552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from parking_lot where id =?
+2019-10-21 18:26:07.529 DEBUG 121552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select parkinglot_.id, parkinglot_.capacity as capacity2_0_, parkinglot_.location as location3_0_, parkinglot_.name as name4_0_ from parking_lot parkinglot_ where parkinglot_.id=?
+2019-10-21 18:26:07.529 DEBUG 121552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into parking_lot (capacity, location, name, id) values (?, ?, ?, ?)
+2019-10-21 18:26:07.529 DEBUG 121552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Update 0: update parking_lot set capacity=?, location=?, name=? where id=?
+2019-10-21 18:26:07.529 DEBUG 121552 --- [main] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from parking_lot where id=?
+2019-10-21 18:26:07.544 DEBUG 121552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6d31f106]
+2019-10-21 18:26:07.544 DEBUG 121552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-10-21 18:26:07.544 DEBUG 121552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : location
+2019-10-21 18:26:07.544 DEBUG 121552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name
+2019-10-21 18:26:07.544 DEBUG 121552 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-10-21 18:26:07.567 DEBUG 121552 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-10-21 18:26:07.571 DEBUG 121552 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.thoughtworks.parking_lot.model.ParkingLot)
+    - Returns
+       - EntityReturnImpl(entity=com.thoughtworks.parking_lot.model.ParkingLot, querySpaceUid=<gen:0>, path=com.thoughtworks.parking_lot.model.ParkingLot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.thoughtworks.parking_lot.model.ParkingLot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-10-21 18:26:07.572 DEBUG 121552 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.thoughtworks.parking_lot.model.ParkingLot [NONE]: select parkinglot0_.id as id1_0_0_, parkinglot0_.capacity as capacity2_0_0_, parkinglot0_.location as location3_0_0_, parkinglot0_.name as name4_0_0_ from parking_lot parkinglot0_ where parkinglot0_.id=?
+2019-10-21 18:26:07.572 DEBUG 121552 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1b1252c8]
+2019-10-21 18:26:07.572 DEBUG 121552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : capacity
+2019-10-21 18:26:07.572 DEBUG 121552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : location
+2019-10-21 18:26:07.572 DEBUG 121552 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name
+2019-10-21 18:26:07.572 DEBUG 121552 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-10-21 18:26:07.572 DEBUG 121552 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-10-21 18:26:07.572 DEBUG 121552 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.thoughtworks.parking_lot.model.ParkingLot)
+    - Returns
+       - EntityReturnImpl(entity=com.thoughtworks.parking_lot.model.ParkingLot, querySpaceUid=<gen:0>, path=com.thoughtworks.parking_lot.model.ParkingLot)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.thoughtworks.parking_lot.model.ParkingLot)
+          - SQL table alias mapping - parkinglot0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-10-21 18:26:07.572 DEBUG 121552 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.thoughtworks.parking_lot.model.ParkingLot [READ]: select parkinglot0_.id as id1_0_0_, parkinglot0_.capacity as capacity2_0_0_, parkinglot0_.location as location3_0_0_, parkinglot0_.name as name4_0_0_ from parking_lot parkinglot0_ where parkinglot0_.id=?
+2019-10-21 18:26:07.581 DEBUG 121552 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity com.thoughtworks.parking_lot.model.ParkingLot: select parkinglot0_.id as id1_0_0_, parkinglot0_.capacity as capacity2_0_0_, parkinglot0_.location as location3_0_0_, parkinglot0_.name as name4_0_0_ from parking_lot parkinglot0_ where parkinglot0_.id=?
+2019-10-21 18:26:07.581 DEBUG 121552 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity com.thoughtworks.parking_lot.model.ParkingLot: select parkinglot0_.id as id1_0_0_, parkinglot0_.capacity as capacity2_0_0_, parkinglot0_.location as location3_0_0_, parkinglot0_.name as name4_0_0_ from parking_lot parkinglot0_ where parkinglot0_.id=?
+2019-10-21 18:26:07.638 DEBUG 121552 --- [main] org.hibernate.SQL                        : create table parking_lot (id bigint not null, capacity integer not null, location varchar(255), name varchar(255), primary key (id))
+2019-10-21 18:26:07.644 DEBUG 121552 --- [main] org.hibernate.SQL                        : create sequence hibernate_sequence start with 1 increment by 1
+2019-10-21 18:26:07.646 DEBUG 121552 --- [main] o.h.query.spi.NamedQueryRepository       : Checking 0 named HQL queries
+2019-10-21 18:26:07.646 DEBUG 121552 --- [main] o.h.query.spi.NamedQueryRepository       : Checking 0 named SQL queries
+2019-10-21 18:26:07.647 DEBUG 121552 --- [main] o.h.internal.SessionFactoryRegistry      : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@72a7aa4f
+2019-10-21 18:26:07.647 DEBUG 121552 --- [main] o.h.internal.SessionFactoryRegistry      : Registering SessionFactory: 5baa3e31-275d-4fa1-b323-86554a6640d7 (<unnamed>)
+2019-10-21 18:26:07.647 DEBUG 121552 --- [main] o.h.internal.SessionFactoryRegistry      : Not binding SessionFactory to JNDI, no JNDI name configured
+2019-10-21 18:26:07.647  INFO 121552 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-21 18:26:07.733 DEBUG 121552 --- [main] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=false]
+2019-10-21 18:26:07.834 DEBUG 121552 --- [main] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 18:26:07.971 DEBUG 121552 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 18:26:08.006 DEBUG 121552 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 18:26:08.107  INFO 121552 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 18:26:08.134 DEBUG 121552 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 18:26:08.167  WARN 121552 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-21 18:26:08.187 DEBUG 121552 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2019-10-21 18:26:08.202 DEBUG 121552 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 18:26:08.202 DEBUG 121552 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 18:26:08.419  INFO 121552 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-21 18:26:08.514  INFO 121552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2019-10-21 18:26:08.515  INFO 121552 --- [main] c.t.parking_lot.ParkingLotApplication    : Started ParkingLotApplication in 4.116 seconds (JVM running for 4.501)
+2019-10-21 18:26:18.653  INFO 121552 --- [http-nio-9090-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 18:26:18.653  INFO 121552 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 18:26:18.653 DEBUG 121552 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-10-21 18:26:18.664 DEBUG 121552 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-10-21 18:26:18.666  INFO 121552 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-10-21 18:26:18.668 DEBUG 121552 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2019-10-21 18:26:18.673 DEBUG 121552 --- [http-nio-9090-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-10-21 18:26:18.697 DEBUG 121552 --- [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-10-21 18:26:18.751 DEBUG 121552 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2019-10-21 18:26:18.751 DEBUG 121552 --- [http-nio-9090-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-10-21 18:26:18.753 DEBUG 121552 --- [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-10-21 19:49:40.545  INFO 121832 --- [main] c.t.p.c.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL17-W10 with PID 121832 (started by Lorenly in D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 19:49:40.546  INFO 121832 --- [main] c.t.p.c.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-21 19:49:40.558 DEBUG 121832 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12299890
+2019-10-21 19:49:41.370 DEBUG 121832 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 19:49:41.370 DEBUG 121832 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 19:49:41.370 DEBUG 121832 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 19:49:41.370 DEBUG 121832 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 19:49:41.370 DEBUG 121832 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 19:49:41.386 DEBUG 121832 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-21 19:49:41.386 DEBUG 121832 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-21 19:49:41.386 DEBUG 121832 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-21 19:49:41.386 DEBUG 121832 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 19:49:41.386 DEBUG 121832 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-21 19:49:41.386 DEBUG 121832 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 19:49:41.386 DEBUG 121832 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 19:49:41.386 DEBUG 121832 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 19:49:41.386 DEBUG 121832 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 19:49:41.386 DEBUG 121832 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 19:49:41.386 DEBUG 121832 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 19:49:41.386 DEBUG 121832 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 19:49:41.386 DEBUG 121832 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 19:49:41.464 DEBUG 121832 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 19:49:41.706  INFO 121832 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:49:41.719 DEBUG 121832 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 19:49:41.757 DEBUG 121832 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2019-10-21 19:49:41.789 DEBUG 121832 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 19:49:41.789 DEBUG 121832 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 19:49:41.849  INFO 121832 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 19:49:41.849  INFO 121832 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 19:49:41.870  INFO 121832 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 21 ms
+2019-10-21 19:49:41.885  INFO 121832 --- [main] c.t.p.c.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.636 seconds (JVM running for 2.383)
+2019-10-21 19:49:41.927 DEBUG 121832 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-10-21 19:49:41.927 DEBUG 121832 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2019-10-21 19:49:41.950 DEBUG 121832 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@12299890, started on Mon Oct 21 19:49:40 CST 2019
+2019-10-21 19:49:41.950  INFO 121832 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:51:30.581  INFO 81616 --- [main] c.t.p.c.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL17-W10 with PID 81616 (started by Lorenly in D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 19:51:30.581  INFO 81616 --- [main] c.t.p.c.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-21 19:51:30.592 DEBUG 81616 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12299890
+2019-10-21 19:51:31.373 DEBUG 81616 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 19:51:31.374 DEBUG 81616 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 19:51:31.374 DEBUG 81616 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 19:51:31.380 DEBUG 81616 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 19:51:31.380 DEBUG 81616 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 19:51:31.381 DEBUG 81616 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-21 19:51:31.381 DEBUG 81616 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-21 19:51:31.381 DEBUG 81616 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-21 19:51:31.382 DEBUG 81616 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 19:51:31.382 DEBUG 81616 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-21 19:51:31.383 DEBUG 81616 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 19:51:31.383 DEBUG 81616 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 19:51:31.383 DEBUG 81616 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 19:51:31.386 DEBUG 81616 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 19:51:31.386 DEBUG 81616 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 19:51:31.386 DEBUG 81616 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 19:51:31.387 DEBUG 81616 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 19:51:31.387 DEBUG 81616 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 19:51:31.467 DEBUG 81616 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 19:51:31.702  INFO 81616 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:51:31.716 DEBUG 81616 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 19:51:31.754 DEBUG 81616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2019-10-21 19:51:31.785 DEBUG 81616 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 19:51:31.785 DEBUG 81616 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 19:51:31.851  INFO 81616 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 19:51:31.851  INFO 81616 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 19:51:31.869  INFO 81616 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 18 ms
+2019-10-21 19:51:31.891  INFO 81616 --- [main] c.t.p.c.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.582 seconds (JVM running for 2.318)
+2019-10-21 19:51:31.925 DEBUG 81616 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-10-21 19:51:31.925 DEBUG 81616 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2019-10-21 19:51:31.941 DEBUG 81616 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@12299890, started on Mon Oct 21 19:51:30 CST 2019
+2019-10-21 19:51:31.951  INFO 81616 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:52:54.257  INFO 101384 --- [main] c.t.p.c.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL17-W10 with PID 101384 (started by Lorenly in D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 19:52:54.257  INFO 101384 --- [main] c.t.p.c.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-21 19:52:54.257 DEBUG 101384 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2fba3fc4
+2019-10-21 19:52:55.063 DEBUG 101384 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 19:52:55.063 DEBUG 101384 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 19:52:55.063 DEBUG 101384 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 19:52:55.063 DEBUG 101384 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 19:52:55.063 DEBUG 101384 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 19:52:55.063 DEBUG 101384 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-21 19:52:55.063 DEBUG 101384 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-21 19:52:55.063 DEBUG 101384 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-21 19:52:55.063 DEBUG 101384 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 19:52:55.063 DEBUG 101384 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-21 19:52:55.063 DEBUG 101384 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 19:52:55.063 DEBUG 101384 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 19:52:55.063 DEBUG 101384 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 19:52:55.078 DEBUG 101384 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 19:52:55.078 DEBUG 101384 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 19:52:55.078 DEBUG 101384 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 19:52:55.078 DEBUG 101384 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 19:52:55.078 DEBUG 101384 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 19:52:55.144 DEBUG 101384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 19:52:55.368  INFO 101384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:52:55.384 DEBUG 101384 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 19:52:55.443 DEBUG 101384 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2019-10-21 19:52:55.462 DEBUG 101384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 19:52:55.462 DEBUG 101384 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 19:52:55.536  INFO 101384 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 19:52:55.537  INFO 101384 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 19:52:55.546  INFO 101384 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 9 ms
+2019-10-21 19:52:55.568  INFO 101384 --- [main] c.t.p.c.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.578 seconds (JVM running for 2.328)
+2019-10-21 19:52:55.609 DEBUG 101384 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-10-21 19:52:55.611 DEBUG 101384 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2019-10-21 19:52:55.617 DEBUG 101384 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@2fba3fc4, started on Mon Oct 21 19:52:54 CST 2019
+2019-10-21 19:52:55.617  INFO 101384 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:53:05.341  INFO 91252 --- [main] c.t.p.c.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL17-W10 with PID 91252 (started by Lorenly in D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 19:53:05.341  INFO 91252 --- [main] c.t.p.c.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-21 19:53:05.358 DEBUG 91252 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12299890
+2019-10-21 19:53:06.125 DEBUG 91252 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 19:53:06.126 DEBUG 91252 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 19:53:06.126 DEBUG 91252 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 19:53:06.132 DEBUG 91252 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 19:53:06.132 DEBUG 91252 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 19:53:06.133 DEBUG 91252 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-21 19:53:06.133 DEBUG 91252 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-21 19:53:06.133 DEBUG 91252 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-21 19:53:06.134 DEBUG 91252 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 19:53:06.134 DEBUG 91252 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-21 19:53:06.134 DEBUG 91252 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 19:53:06.134 DEBUG 91252 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 19:53:06.135 DEBUG 91252 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 19:53:06.138 DEBUG 91252 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 19:53:06.138 DEBUG 91252 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 19:53:06.138 DEBUG 91252 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 19:53:06.138 DEBUG 91252 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 19:53:06.138 DEBUG 91252 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 19:53:06.213 DEBUG 91252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 19:53:06.441  INFO 91252 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:53:06.441 DEBUG 91252 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 19:53:06.504 DEBUG 91252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2019-10-21 19:53:06.523 DEBUG 91252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 19:53:06.523 DEBUG 91252 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 19:53:06.593  INFO 91252 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 19:53:06.593  INFO 91252 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 19:53:06.593  INFO 91252 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 19:53:06.631  INFO 91252 --- [main] c.t.p.c.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.567 seconds (JVM running for 2.312)
+2019-10-21 19:53:06.672 DEBUG 91252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-10-21 19:53:06.673 DEBUG 91252 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2019-10-21 19:53:06.688 DEBUG 91252 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@12299890, started on Mon Oct 21 19:53:05 CST 2019
+2019-10-21 19:53:06.689  INFO 91252 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:05:54.713  INFO 131612 --- [main] c.t.p.c.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL17-W10 with PID 131612 (started by Lorenly in D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 20:05:54.714  INFO 131612 --- [main] c.t.p.c.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-21 20:05:54.742 DEBUG 131612 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12299890
+2019-10-21 20:05:55.598 DEBUG 131612 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:05:55.599 DEBUG 131612 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:05:55.599 DEBUG 131612 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 20:05:55.606 DEBUG 131612 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:05:55.606 DEBUG 131612 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:05:55.607 DEBUG 131612 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-21 20:05:55.607 DEBUG 131612 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-21 20:05:55.607 DEBUG 131612 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-21 20:05:55.607 DEBUG 131612 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 20:05:55.607 DEBUG 131612 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-21 20:05:55.607 DEBUG 131612 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 20:05:55.607 DEBUG 131612 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 20:05:55.607 DEBUG 131612 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 20:05:55.607 DEBUG 131612 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 20:05:55.607 DEBUG 131612 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 20:05:55.607 DEBUG 131612 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 20:05:55.607 DEBUG 131612 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 20:05:55.607 DEBUG 131612 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 20:05:55.692 DEBUG 131612 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 20:05:55.944  INFO 131612 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:05:55.963 DEBUG 131612 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 20:05:56.006 DEBUG 131612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2019-10-21 20:05:56.042 DEBUG 131612 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 20:05:56.050 DEBUG 131612 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 20:05:56.121  INFO 131612 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 20:05:56.121  INFO 131612 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 20:05:56.121  INFO 131612 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 20:05:56.159  INFO 131612 --- [main] c.t.p.c.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.882 seconds (JVM running for 2.747)
+2019-10-21 20:05:56.228 DEBUG 131612 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.model.ParkingLot com.thoughtworks.parking_lot.controller.ParkingLotController.updateParkingLot(java.lang.String,com.thoughtworks.parking_lot.model.ParkingLot) throws com.thoughtworks.parking_lot.errorExceptionHandler.BadRequestException
+2019-10-21 20:05:56.250  WARN 131612 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.thoughtworks.parking_lot.model.ParkingLot com.thoughtworks.parking_lot.controller.ParkingLotController.updateParkingLot(java.lang.String,com.thoughtworks.parking_lot.model.ParkingLot) throws com.thoughtworks.parking_lot.errorExceptionHandler.BadRequestException]
+2019-10-21 20:05:56.263 DEBUG 131612 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@12299890, started on Mon Oct 21 20:05:54 CST 2019
+2019-10-21 20:05:56.264  INFO 131612 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:06:26.800  INFO 94728 --- [main] c.t.p.c.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL17-W10 with PID 94728 (started by Lorenly in D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 20:06:26.800  INFO 94728 --- [main] c.t.p.c.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-21 20:06:26.816 DEBUG 94728 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12299890
+2019-10-21 20:06:27.743 DEBUG 94728 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:06:27.743 DEBUG 94728 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:06:27.743 DEBUG 94728 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 20:06:27.743 DEBUG 94728 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:06:27.743 DEBUG 94728 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:06:27.743 DEBUG 94728 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-21 20:06:27.743 DEBUG 94728 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-21 20:06:27.743 DEBUG 94728 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-21 20:06:27.758 DEBUG 94728 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 20:06:27.758 DEBUG 94728 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-21 20:06:27.758 DEBUG 94728 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 20:06:27.758 DEBUG 94728 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 20:06:27.758 DEBUG 94728 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 20:06:27.758 DEBUG 94728 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 20:06:27.758 DEBUG 94728 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 20:06:27.758 DEBUG 94728 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 20:06:27.758 DEBUG 94728 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 20:06:27.758 DEBUG 94728 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 20:06:27.856 DEBUG 94728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 20:06:28.124  INFO 94728 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:06:28.140 DEBUG 94728 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 20:06:28.198 DEBUG 94728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2019-10-21 20:06:28.229 DEBUG 94728 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 20:06:28.240 DEBUG 94728 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 20:06:28.314  INFO 94728 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 20:06:28.314  INFO 94728 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 20:06:28.314  INFO 94728 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 20:06:28.356  INFO 94728 --- [main] c.t.p.c.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.848 seconds (JVM running for 2.676)
+2019-10-21 20:06:28.394 DEBUG 94728 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.model.ParkingLot com.thoughtworks.parking_lot.controller.ParkingLotController.updateParkingLot(java.lang.String,com.thoughtworks.parking_lot.model.ParkingLot) throws com.thoughtworks.parking_lot.errorExceptionHandler.BadRequestException
+2019-10-21 20:06:28.414  WARN 94728 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.thoughtworks.parking_lot.model.ParkingLot com.thoughtworks.parking_lot.controller.ParkingLotController.updateParkingLot(java.lang.String,com.thoughtworks.parking_lot.model.ParkingLot) throws com.thoughtworks.parking_lot.errorExceptionHandler.BadRequestException]
+2019-10-21 20:06:28.430 DEBUG 94728 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@12299890, started on Mon Oct 21 20:06:26 CST 2019
+2019-10-21 20:06:28.430  INFO 94728 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:12:50.122 DEBUG 73692 --- [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 20:12:50.137 DEBUG 73692 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 20:12:50.137 DEBUG 73692 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 20:12:50.137 DEBUG 73692 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 20:12:50.137 DEBUG 73692 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 20:12:50.137 DEBUG 73692 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 20:12:50.192  INFO 73692 --- [main] c.t.p.c.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL17-W10 with PID 73692 (started by Lorenly in D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 20:12:50.192  INFO 73692 --- [main] c.t.p.c.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-21 20:12:50.204 DEBUG 73692 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12299890
+2019-10-21 20:12:51.070 DEBUG 73692 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:12:51.070 DEBUG 73692 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:12:51.070 DEBUG 73692 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 20:12:51.070 DEBUG 73692 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:12:51.070 DEBUG 73692 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:12:51.070 DEBUG 73692 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-21 20:12:51.070 DEBUG 73692 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-21 20:12:51.070 DEBUG 73692 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-21 20:12:51.070 DEBUG 73692 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 20:12:51.070 DEBUG 73692 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-21 20:12:51.070 DEBUG 73692 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 20:12:51.070 DEBUG 73692 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 20:12:51.070 DEBUG 73692 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 20:12:51.085 DEBUG 73692 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 20:12:51.085 DEBUG 73692 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 20:12:51.085 DEBUG 73692 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 20:12:51.085 DEBUG 73692 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 20:12:51.085 DEBUG 73692 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 20:12:51.171 DEBUG 73692 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 20:12:51.425  INFO 73692 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:12:51.440 DEBUG 73692 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 20:12:51.500 DEBUG 73692 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2019-10-21 20:12:51.527 DEBUG 73692 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 20:12:51.536 DEBUG 73692 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 20:12:51.607  INFO 73692 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 20:12:51.607  INFO 73692 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 20:12:51.607  INFO 73692 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2019-10-21 20:12:51.650  INFO 73692 --- [main] c.t.p.c.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.833 seconds (JVM running for 2.703)
+2019-10-21 20:12:51.736 DEBUG 73692 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.model.ParkingLot com.thoughtworks.parking_lot.controller.ParkingLotController.updateParkingLot(java.lang.String,com.thoughtworks.parking_lot.model.ParkingLot) throws com.thoughtworks.parking_lot.errorExceptionHandler.BadRequestException
+2019-10-21 20:12:51.777 DEBUG 73692 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [com.thoughtworks.parking_lot.model.ParkingLot@6573d2f7]
+2019-10-21 20:12:51.789 DEBUG 73692 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@12299890, started on Mon Oct 21 20:12:50 CST 2019
+2019-10-21 20:12:51.790  INFO 73692 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:13:30.639 DEBUG 72104 --- [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 20:13:30.645 DEBUG 72104 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 20:13:30.646 DEBUG 72104 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 20:13:30.646 DEBUG 72104 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 20:13:30.646 DEBUG 72104 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 20:13:30.646 DEBUG 72104 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 20:13:30.697  INFO 72104 --- [main] c.t.p.c.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL17-W10 with PID 72104 (started by Lorenly in D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 20:13:30.697  INFO 72104 --- [main] c.t.p.c.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-21 20:13:30.710 DEBUG 72104 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12299890
+2019-10-21 20:13:31.563 DEBUG 72104 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:13:31.563 DEBUG 72104 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:13:31.563 DEBUG 72104 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 20:13:31.570 DEBUG 72104 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:13:31.570 DEBUG 72104 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:13:31.571 DEBUG 72104 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-21 20:13:31.571 DEBUG 72104 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-21 20:13:31.571 DEBUG 72104 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-21 20:13:31.572 DEBUG 72104 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 20:13:31.572 DEBUG 72104 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-21 20:13:31.573 DEBUG 72104 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 20:13:31.573 DEBUG 72104 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 20:13:31.573 DEBUG 72104 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 20:13:31.576 DEBUG 72104 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 20:13:31.577 DEBUG 72104 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 20:13:31.577 DEBUG 72104 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 20:13:31.577 DEBUG 72104 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 20:13:31.577 DEBUG 72104 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 20:13:31.657 DEBUG 72104 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 20:13:31.907  INFO 72104 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:13:31.908 DEBUG 72104 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 20:13:31.979 DEBUG 72104 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2019-10-21 20:13:32.000 DEBUG 72104 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 20:13:32.000 DEBUG 72104 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 20:13:32.080  INFO 72104 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 20:13:32.080  INFO 72104 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 20:13:32.096  INFO 72104 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 20:13:32.123  INFO 72104 --- [main] c.t.p.c.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.754 seconds (JVM running for 2.623)
+2019-10-21 20:13:32.208 DEBUG 72104 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.model.ParkingLot com.thoughtworks.parking_lot.controller.ParkingLotController.updateParkingLot(java.lang.String,com.thoughtworks.parking_lot.model.ParkingLot) throws com.thoughtworks.parking_lot.errorExceptionHandler.BadRequestException
+2019-10-21 20:13:32.252 DEBUG 72104 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [com.thoughtworks.parking_lot.model.ParkingLot@6573d2f7]
+2019-10-21 20:13:32.268 DEBUG 72104 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@12299890, started on Mon Oct 21 20:13:30 CST 2019
+2019-10-21 20:13:32.268  INFO 72104 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:14:27.052 DEBUG 94952 --- [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 20:14:27.060 DEBUG 94952 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 20:14:27.062 DEBUG 94952 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 20:14:27.062 DEBUG 94952 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 20:14:27.062 DEBUG 94952 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 20:14:27.062 DEBUG 94952 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 20:14:27.090  INFO 94952 --- [main] c.t.p.c.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL17-W10 with PID 94952 (started by Lorenly in D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 20:14:27.090  INFO 94952 --- [main] c.t.p.c.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-21 20:14:27.106 DEBUG 94952 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12299890
+2019-10-21 20:14:28.029 DEBUG 94952 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:14:28.029 DEBUG 94952 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:14:28.030 DEBUG 94952 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 20:14:28.037 DEBUG 94952 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:14:28.037 DEBUG 94952 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:14:28.038 DEBUG 94952 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-21 20:14:28.038 DEBUG 94952 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-21 20:14:28.039 DEBUG 94952 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-21 20:14:28.040 DEBUG 94952 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 20:14:28.040 DEBUG 94952 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-21 20:14:28.041 DEBUG 94952 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 20:14:28.041 DEBUG 94952 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 20:14:28.041 DEBUG 94952 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 20:14:28.045 DEBUG 94952 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 20:14:28.045 DEBUG 94952 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 20:14:28.045 DEBUG 94952 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 20:14:28.045 DEBUG 94952 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 20:14:28.045 DEBUG 94952 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 20:14:28.136 DEBUG 94952 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 20:14:28.366  INFO 94952 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:14:28.381 DEBUG 94952 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 20:14:28.502 DEBUG 94952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2019-10-21 20:14:28.540 DEBUG 94952 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 20:14:28.549 DEBUG 94952 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 20:14:28.634  INFO 94952 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 20:14:28.634  INFO 94952 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 20:14:28.645  INFO 94952 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 11 ms
+2019-10-21 20:14:28.670  INFO 94952 --- [main] c.t.p.c.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.9 seconds (JVM running for 2.7)
+2019-10-21 20:14:28.754 DEBUG 94952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.model.ParkingLot com.thoughtworks.parking_lot.controller.ParkingLotController.updateParkingLot(java.lang.String,com.thoughtworks.parking_lot.model.ParkingLot) throws com.thoughtworks.parking_lot.errorExceptionHandler.BadRequestException
+2019-10-21 20:14:28.793 DEBUG 94952 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [com.thoughtworks.parking_lot.model.ParkingLot@6573d2f7]
+2019-10-21 20:14:28.817 DEBUG 94952 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@12299890, started on Mon Oct 21 20:14:27 CST 2019
+2019-10-21 20:14:28.817  INFO 94952 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:15:06.222  INFO 97272 --- [main] c.t.p.c.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL17-W10 with PID 97272 (started by Lorenly in D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 20:15:06.223  INFO 97272 --- [main] c.t.p.c.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-21 20:15:06.236 DEBUG 97272 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12299890
+2019-10-21 20:15:07.126 DEBUG 97272 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:15:07.126 DEBUG 97272 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:15:07.126 DEBUG 97272 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 20:15:07.141 DEBUG 97272 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 20:15:07.234 DEBUG 97272 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 20:15:07.473  INFO 97272 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:15:07.486 DEBUG 97272 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 20:15:07.538 DEBUG 97272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2019-10-21 20:15:07.559 DEBUG 97272 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 20:15:07.568 DEBUG 97272 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 20:15:07.633  INFO 97272 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 20:15:07.633  INFO 97272 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 20:15:07.642  INFO 97272 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 9 ms
+2019-10-21 20:15:07.666  INFO 97272 --- [main] c.t.p.c.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.803 seconds (JVM running for 2.63)
+2019-10-21 20:15:07.736 DEBUG 97272 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.model.ParkingLot com.thoughtworks.parking_lot.controller.ParkingLotController.updateParkingLot(java.lang.String,com.thoughtworks.parking_lot.model.ParkingLot) throws com.thoughtworks.parking_lot.errorExceptionHandler.BadRequestException
+2019-10-21 20:15:07.788 DEBUG 97272 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [com.thoughtworks.parking_lot.model.ParkingLot@1fb2d5e]
+2019-10-21 20:15:07.802 DEBUG 97272 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@12299890, started on Mon Oct 21 20:15:06 CST 2019
+2019-10-21 20:15:07.802  INFO 97272 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:17:21.863  INFO 64320 --- [main] c.t.p.c.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL17-W10 with PID 64320 (started by Lorenly in D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 20:17:21.863  INFO 64320 --- [main] c.t.p.c.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-21 20:17:21.879 DEBUG 64320 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12299890
+2019-10-21 20:17:22.733 DEBUG 64320 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:17:22.733 DEBUG 64320 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:17:22.733 DEBUG 64320 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 20:17:22.733 DEBUG 64320 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:17:22.733 DEBUG 64320 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:17:22.733 DEBUG 64320 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-21 20:17:22.733 DEBUG 64320 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-21 20:17:22.733 DEBUG 64320 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-21 20:17:22.733 DEBUG 64320 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 20:17:22.733 DEBUG 64320 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-21 20:17:22.733 DEBUG 64320 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 20:17:22.733 DEBUG 64320 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 20:17:22.733 DEBUG 64320 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 20:17:22.749 DEBUG 64320 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 20:17:22.749 DEBUG 64320 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 20:17:22.749 DEBUG 64320 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 20:17:22.749 DEBUG 64320 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 20:17:22.749 DEBUG 64320 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 20:17:22.844 DEBUG 64320 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 20:17:23.082  INFO 64320 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:17:23.097 DEBUG 64320 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 20:17:23.196 DEBUG 64320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2019-10-21 20:17:23.221 DEBUG 64320 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 20:17:23.231 DEBUG 64320 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 20:17:23.291  INFO 64320 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 20:17:23.291  INFO 64320 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 20:17:23.306  INFO 64320 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 15 ms
+2019-10-21 20:17:23.342  INFO 64320 --- [main] c.t.p.c.ParkingLotControllerTest         : Started ParkingLotControllerTest in 1.772 seconds (JVM running for 2.59)
+2019-10-21 20:17:23.433 DEBUG 64320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.model.ParkingLot com.thoughtworks.parking_lot.controller.ParkingLotController.updateParkingLot(java.lang.String,com.thoughtworks.parking_lot.model.ParkingLot) throws com.thoughtworks.parking_lot.errorExceptionHandler.BadRequestException
+2019-10-21 20:17:23.477 DEBUG 64320 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [com.thoughtworks.parking_lot.model.ParkingLot@6573d2f7]
+2019-10-21 20:17:23.497 DEBUG 64320 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@12299890, started on Mon Oct 21 20:17:21 CST 2019
+2019-10-21 20:17:23.497  INFO 64320 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:18:55.907 DEBUG 60836 --- [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 20:18:55.916 DEBUG 60836 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 20:18:55.916 DEBUG 60836 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 20:18:55.916 DEBUG 60836 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 20:18:55.916 DEBUG 60836 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 20:18:55.917 DEBUG 60836 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 20:18:55.975  INFO 60836 --- [main] c.t.p.c.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL17-W10 with PID 60836 (started by Lorenly in D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 20:18:55.975  INFO 60836 --- [main] c.t.p.c.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-21 20:18:55.990 DEBUG 60836 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1fc0053e
+2019-10-21 20:18:57.042 DEBUG 60836 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:18:57.042 DEBUG 60836 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:18:57.042 DEBUG 60836 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 20:18:57.042 DEBUG 60836 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:18:57.042 DEBUG 60836 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:18:57.042 DEBUG 60836 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-21 20:18:57.058 DEBUG 60836 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-21 20:18:57.058 DEBUG 60836 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-21 20:18:57.059 DEBUG 60836 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 20:18:57.059 DEBUG 60836 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-21 20:18:57.059 DEBUG 60836 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 20:18:57.059 DEBUG 60836 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 20:18:57.060 DEBUG 60836 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 20:18:57.060 DEBUG 60836 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 20:18:57.060 DEBUG 60836 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 20:18:57.060 DEBUG 60836 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 20:18:57.060 DEBUG 60836 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 20:18:57.060 DEBUG 60836 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 20:18:57.166 DEBUG 60836 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 20:18:57.459  INFO 60836 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:18:57.477 DEBUG 60836 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 20:18:57.539 DEBUG 60836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2019-10-21 20:18:57.569 DEBUG 60836 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 20:18:57.570 DEBUG 60836 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 20:18:57.673  INFO 60836 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 20:18:57.673  INFO 60836 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 20:18:57.686  INFO 60836 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 13 ms
+2019-10-21 20:18:57.719  INFO 60836 --- [main] c.t.p.c.ParkingLotControllerTest         : Started ParkingLotControllerTest in 2.13 seconds (JVM running for 3.198)
+2019-10-21 20:18:57.822 DEBUG 60836 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.model.ParkingLot com.thoughtworks.parking_lot.controller.ParkingLotController.updateParkingLot(java.lang.String,com.thoughtworks.parking_lot.model.ParkingLot) throws com.thoughtworks.parking_lot.errorExceptionHandler.BadRequestException
+2019-10-21 20:18:57.871 DEBUG 60836 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [com.thoughtworks.parking_lot.model.ParkingLot@6fbf5db2]
+2019-10-21 20:18:57.878 DEBUG 60836 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 20:18:57.878 DEBUG 60836 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.model.ParkingLot@3079c26a]
+2019-10-21 20:18:57.903 DEBUG 60836 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1fc0053e, started on Mon Oct 21 20:18:55 CST 2019
+2019-10-21 20:18:57.903  INFO 60836 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:19:31.018  INFO 104996 --- [main] c.t.p.c.ParkingLotControllerTest         : Starting ParkingLotControllerTest on ITAMNL17-W10 with PID 104996 (started by Lorenly in D:\git\Parking-Lot-Template-2019-10-11-2-23-48-95)
+2019-10-21 20:19:31.019  INFO 104996 --- [main] c.t.p.c.ParkingLotControllerTest         : The following profiles are active: Test
+2019-10-21 20:19:31.070 DEBUG 104996 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12299890
+2019-10-21 20:19:31.877 DEBUG 104996 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:19:31.878 DEBUG 104996 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:19:31.879 DEBUG 104996 --- [main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-10-21 20:19:31.886 DEBUG 104996 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-10-21 20:19:31.886 DEBUG 104996 --- [main] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-10-21 20:19:31.887 DEBUG 104996 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-10-21 20:19:31.887 DEBUG 104996 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-10-21 20:19:31.887 DEBUG 104996 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-10-21 20:19:31.888 DEBUG 104996 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-10-21 20:19:31.888 DEBUG 104996 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-10-21 20:19:31.889 DEBUG 104996 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-10-21 20:19:31.889 DEBUG 104996 --- [main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-10-21 20:19:31.889 DEBUG 104996 --- [main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-10-21 20:19:31.893 DEBUG 104996 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-10-21 20:19:31.893 DEBUG 104996 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-10-21 20:19:31.893 DEBUG 104996 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-10-21 20:19:31.893 DEBUG 104996 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-10-21 20:19:31.893 DEBUG 104996 --- [main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-10-21 20:19:31.994 DEBUG 104996 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-10-21 20:19:32.251  INFO 104996 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 20:19:32.266 DEBUG 104996 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-10-21 20:19:32.320 DEBUG 104996 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2019-10-21 20:19:32.346 DEBUG 104996 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-10-21 20:19:32.346 DEBUG 104996 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-10-21 20:19:32.418  INFO 104996 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-21 20:19:32.418  INFO 104996 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-21 20:19:32.434  INFO 104996 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2019-10-21 20:19:32.465  INFO 104996 --- [main] c.t.p.c.ParkingLotControllerTest         : Started ParkingLotControllerTest in 11.795 seconds (JVM running for 12.614)
+2019-10-21 20:19:32.550 DEBUG 104996 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public com.thoughtworks.parking_lot.model.ParkingLot com.thoughtworks.parking_lot.controller.ParkingLotController.updateParkingLot(java.lang.String,com.thoughtworks.parking_lot.model.ParkingLot) throws com.thoughtworks.parking_lot.errorExceptionHandler.BadRequestException
+2019-10-21 20:19:32.589 DEBUG 104996 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json" to [com.thoughtworks.parking_lot.model.ParkingLot@350d3f4d]
+2019-10-21 20:19:32.589 DEBUG 104996 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2019-10-21 20:19:32.589 DEBUG 104996 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.thoughtworks.parking_lot.model.ParkingLot@c755b2]
+2019-10-21 20:19:32.633 DEBUG 104996 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@12299890, started on Mon Oct 21 20:19:31 CST 2019
+2019-10-21 20:19:32.635  INFO 104996 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

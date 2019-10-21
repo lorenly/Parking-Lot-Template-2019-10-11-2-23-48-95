@@ -45,4 +45,10 @@ public class ParkingLotController {
         return parkingLotService.findByName(name);
     }
 
+    @PatchMapping(value = "/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseStatus(HttpStatus.OK)
+    public ParkingLot updateParkingLot(@PathVariable("name") String name, @RequestBody ParkingLot parkingLot) throws BadRequestException {
+        return parkingLotService.updateParkingLot(name, parkingLot);
+    }
+
 }
