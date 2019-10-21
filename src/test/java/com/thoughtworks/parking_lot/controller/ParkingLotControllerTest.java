@@ -3,6 +3,7 @@ package com.thoughtworks.parking_lot.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.thoughtworks.parking_lot.errorExceptionHandler.BadRequestException;
 import com.thoughtworks.parking_lot.model.ParkingLot;
+import com.thoughtworks.parking_lot.model.ParkingOrder;
 import com.thoughtworks.parking_lot.service.ParkingLotService;
 import javassist.NotFoundException;
 import org.junit.Test;
@@ -42,7 +43,7 @@ public class ParkingLotControllerTest {
     @Autowired
     ObjectMapper objectMapper;
 
-    // TODO: 10/21/2019  Assert parkinglot data correctly
+    /****************Story 1****************/
     @Test
     public void should_return_status_created_when_save_parking_lot() throws Exception {
         when(parkingLotService.saveParkingLot(myParkingLot())).thenReturn(myParkingLot());
@@ -148,7 +149,6 @@ public class ParkingLotControllerTest {
         resultActions.andExpect(status().isBadRequest());
     }
 
-
     private ParkingLot myParkingLot(){
         ParkingLot parkingLot = new ParkingLot();
         parkingLot.setName("MyParkingLot");
@@ -156,5 +156,16 @@ public class ParkingLotControllerTest {
         parkingLot.setCapacity(50);
         return parkingLot;
     }
+
+    /****************Story 2****************/
+    @Test
+    public void should_create_parking_order(){
+
+    }
+
+   /* private ParkingOrder myParkingOrder(){
+        ParkingOrder parkingOrder = new ParkingOrder();
+        parkingOrder.setOrderNumber()
+    }*/
 
 }
