@@ -15,10 +15,8 @@ import org.springframework.web.bind.annotation.*;
 public class ParkingLotController {
     @Autowired
     ParkingLotService parkingLotService;
-
-    //add default
+    
     @ResponseStatus(HttpStatus.OK)
-
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public Iterable<ParkingLot> listAllParkingLot(@RequestParam (required = false, defaultValue = "0") Integer page,
                                                   @RequestParam (required = false, defaultValue = "15") Integer pageSize){

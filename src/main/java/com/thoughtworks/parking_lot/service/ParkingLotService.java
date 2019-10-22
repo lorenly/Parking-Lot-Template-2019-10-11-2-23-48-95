@@ -2,7 +2,9 @@ package com.thoughtworks.parking_lot.service;
 
 import com.thoughtworks.parking_lot.errorExceptionHandler.BadRequestException;
 import com.thoughtworks.parking_lot.model.ParkingLot;
+import com.thoughtworks.parking_lot.model.ParkingOrder;
 import com.thoughtworks.parking_lot.repository.ParkingLotRepository;
+import com.thoughtworks.parking_lot.repository.ParkingOrderRepository;
 import javassist.NotFoundException;
 import javassist.tools.web.BadHttpRequest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -65,4 +67,5 @@ public class ParkingLotService {
         }
         throw new BadRequestException(BAD_REQUEST);
     }
+
 }
